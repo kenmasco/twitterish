@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitterish</title>
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="twitterish.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> Home</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-star"> Connect</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"> Discover</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-user"> Me</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group"> 
+              <div class="col-md-12 col-md-offset-3">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+            </div>
+          </form>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-send"></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span><b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <div class="media">
+                  <a href="#">
+                    <img class="media-object pull-left" src="https://pbs.twimg.com/profile_images/378800000631515495/3c7a24f763c5a0a6442e7234f0168f11_normal.jpeg" alt="...">
+                    <div class="media-body">
+                      <h4 class="media-heading">Kennerdeigh Scott</h4>
+                      Edit profile
+                    </div>
+                  </a>
+                </div>
+                <li class="divider"></li>
+                <li><a href="#">Lists</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Keyboard Shortcuts</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Sign out</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-edit"></span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+      <script>
+      $(document).ready(function(){
+        $('.dropdown-toggle').dropdown();
+      })
+      </script>
+
+  
+      
+    <div class="container twitter-container"> 
+      <div class='row'>
+        <div class='sidebar col-sm-4'>
+            <div class="row sidebar-module">
+              <div class="col-xs-12"> 
+                <div class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="https://pbs.twimg.com/profile_images/378800000631515495/3c7a24f763c5a0a6442e7234f0168f11_normal.jpeg" alt="...">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a href="#">Kennerdeigh Scott</a></h4>
+                    View my profile page
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                3,678 <p> Tweets</p>
+              </div>
+              <div class="col-xs-4">
+                856 <p> Following </p>
+              </div>
+              <div class="col-xs-4">
+                387 <p> Followers</p>
+              </div> 
+              <div class="col-xs-12 quick-compose">
+                <div class="input-group compose-tweet">
+                  <input type="text" class="form-control" placeholder="Compose new Tweet...">
+                </div>
+              </div>  
+            </div>
+
+            <div class="row sidebar-module">
+              <div class="col-xs-12">
+                <h5>Who to follow</h5>
+              </div>
+            </div>
+
+            <div class="row sidebar-module">
+              <div class="col-xs-12">
+                <h5>Trends<h5>
+                <ul class="nav sidenav">
+                  <li><a href="#">#GuessThePrize</a></li>
+                  <li><a href="#">#hiphop</a></li>
+                  <li><a href="#">#CES2014</a></li>
+                  <li><a href="#">#EXADirectioners</a></li>
+                  <li><a href="#">#TCA14</a></li>
+                  <li><a href="#">West Ham</a></li>
+                  <li><a href="#">Nick Cannon</a></li>
+                  <li><a href="#">Utah</a></li>
+                  <li><a href="#">Obamacare</a></li>
+                  <li><a href="#">Geek Glasses</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row sidebar-module">
+              <div class="col-xs-12">
+                Copyright Twitter etc.......................
+              </div>
+            </div>
+        </div>
+
+        <div class='main-content col-sm-8'>
+          <h1>Tweets</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
